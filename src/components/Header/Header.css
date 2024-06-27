@@ -1,0 +1,43 @@
+.header {
+  background: no-repeat url(../../images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 60px 0;
+}
+
+.header__title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.header__button {
+  background-color: #778d45;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Micra", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 6px 7px 40px -4px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+
+.header__button:hover {
+  background-color: #95b154;
+}
+
+.header__book {
+  background-color: black;
+  height: 500px;
+  width: 500px;
+}

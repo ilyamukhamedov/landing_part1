@@ -1,0 +1,48 @@
+/* .reviews {
+  margin: 60px;
+}
+
+.reviews__title {
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  padding-top: 26.8px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.reviews__container {
+}
+
+.cards {
+  background: #f4f3f2;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0;
+}
+
+.card__item {
+}
+
+.cards__title {
+  font-size: 25px;
+  font-family: "Micra";
+  font-weight: normal;
+  padding: 0 40px 0;
+}
+
+.cards__position {
+  padding: 0 40px 0;
+  opacity: 0.6;
+}
+
+.cards__description {
+  padding: 0 40px 0;
+}
+
+.slick-slide div {
+  margin: 10px;
+} */

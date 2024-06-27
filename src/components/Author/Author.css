@@ -1,0 +1,49 @@
+.author {
+  margin: 60px;
+}
+
+.author__title {
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+}
+
+.author__container {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  gap: 200px;
+}
+
+.author__name {
+  font-family: "Helvetica", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.author__description {
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.author__side {
+  margin: 20px 20px 0 0;
+  writing-mode: vertical-rl;
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  font-size: 75px;
+  transform: scale(2, 1);
+  z-index: -1;
+
+  background: linear-gradient(
+    0deg,
+    rgba(119, 141, 69, 1) 0%,
+    rgba(68, 99, 22, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
