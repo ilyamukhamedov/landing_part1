@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+
+  margin: 60px;
+  justify-content: center;
+}
+
+.about__title {
+  padding-top: 60px;
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+}
+
+.about__text {
+  padding-right: 200px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #fff;
+}

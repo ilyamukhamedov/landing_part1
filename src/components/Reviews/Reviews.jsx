@@ -8,9 +8,10 @@ const Reviews = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [isScrollLeft, setIsScrollLeft] = useState(0);
+  const hasInitialized = useRef(false);
 
   useEffect(() => {
-    if (!cardsRef.current) return;
+    if (!cardsRef.current || hasInitialized.current) return;
 
     const wrapper = cardsRef.current;
     const width = wrapper.querySelector(".cards").offsetWidth;
@@ -26,6 +27,8 @@ const Reviews = () => {
 
     console.log(cards);
 
+    console.log(cards.slice(-cardPreview));
+
     cards
       .slice(-cardPreview)
       .reverse()
@@ -36,6 +39,10 @@ const Reviews = () => {
     cards.slice(0, cardPreview).forEach((card) => {
       wrapper.insertAdjacentHTML("beforeend", card.outerHTML);
     });
+
+    console.log(wrapper);
+
+    hasInitialized.current = true;
   }, []);
 
   useEffect(() => {
@@ -85,6 +92,10 @@ const Reviews = () => {
 
   const infiniteScroll = () => {
     const wrapper = cardsRef.current;
+
+    console.log(wrapper.scrollLeft);
+
+    console.log(wrapper.scrollWidth - wrapper.offsetWidth);
 
     if (wrapper.scrollLeft === 0) {
       wrapper.classList.add("scrolling");

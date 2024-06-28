@@ -14,7 +14,7 @@ const Navigation = () => {
           </a>
         </li>
         <li>
-          <a href="/" className="nav__link">
+          <a href="#about" className="nav__link">
             О КНИГЕ
           </a>
         </li>

@@ -42,7 +42,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 40px;
+  padding: 40px 30px;
 }
 
 .scrolling {
