@@ -5,7 +5,6 @@ import "./App.css";
 import Header from "../Header/Header";
 import Author from "../Author/Author";
 import Reviews from "../Reviews/Reviews";
-import Reviews1 from "../Reviews copy/Reviews1";
 import Navigation from "../Navigation /Navigation";
 import About from "../About/About";
 
@@ -16,7 +15,6 @@ const App = () => {
       <Header />
       <Author />
       <About />
-      {/* <Reviews1 /> */}
       <Reviews />
     </div>
   );

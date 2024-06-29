@@ -1,6 +1,6 @@
 .about {
   display: flex;
-
+  flex-direction: column;
   margin: 60px;
   justify-content: center;
 }

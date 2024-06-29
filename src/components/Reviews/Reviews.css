@@ -1,4 +1,4 @@
-.reviews /* wrapper */ {
+.reviews {
   margin: 60px;
 }
 
@@ -18,8 +18,8 @@
 .reviews__wrapper {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  gap: 16px;
+  grid-auto-columns: calc((100% / 3) - (50px * 2 / 3));
+  gap: 50px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -30,11 +30,11 @@
   display: none;
 }
 
-.cards /* carousel */ {
+.cards {
   scroll-snap-align: start;
   list-style: none;
   background: #f4f3f2;
-  border-radius: 8px;
+  border-radius: 40px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -102,12 +102,12 @@
 }
 
 .reviews i:last-child {
-  right: -18px;
+  right: -21px;
 }
 
 @media screen and (max-width: 1200px) {
   .reviews__wrapper {
-    grid-auto-columns: calc((100% / 2) - 9px);
+    grid-auto-columns: calc((100% / 2) - (40px * 2 / 3));
   }
 }
 

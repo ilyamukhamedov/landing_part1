@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import telegram from "../../images/telegram.svg";
-import instagram from "../../images/instagram.svg";
-import dzen from "../../images/dzen.svg";
-import Navigation from "../Navigation /Navigation";
+import Modal from "../Modal/Modal";
+import ModalForm from "../ModalForm/ModalForm";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
   return (
     <>
       <div className="header">
-        {/* <Navigation /> */}
         <div className="header__container">
           <div>
             <h1 className="header__title">
@@ -18,9 +25,14 @@ const Header = () => {
               <br />
               <br /> NB. Сад
             </h1>
-            <button type="button" className="header__button">
+            <button
+              type="button"
+              className="header__button"
+              onClick={handleOpen}
+            >
               Купить книгу
             </button>
+            <ModalForm isOpen={open} onClose={handleClose} />
           </div>
           <div className="header__book"> </div>
         </div>
