@@ -1,11 +1,15 @@
 import React from "react";
 import "./ConfirmModal.css";
-import Modal from "../Modal/Modal";
 
-const ConfirmModal = () => {
+const ConfirmModal = ({ isOpen }) => {
   return (
-    <div>
-      <Modal></Modal>
+    <div className={`confirm ${isOpen ? "confirm__opened" : ""}`}>
+      <div className="confirm__container">
+        <h1 className="confirm__title"> Спасибо за заявку!</h1>
+        <p className="confirm__description">
+          Наш менеджер свяжеться с вами в течение дня.
+        </p>
+      </div>
     </div>
   );
 };

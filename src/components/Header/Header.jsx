@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import Modal from "../Modal/Modal";
-import ModalForm from "../ModalForm/ModalForm";
+import ConfirmModal from "../ConfirmModal/ConfirmModal";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
             >
               Купить книгу
             </button>
-            <ModalForm isOpen={open} onClose={handleClose} />
+            <Modal isOpen={open} onClose={handleClose} />
           </div>
           <div className="header__book"> </div>
         </div>
