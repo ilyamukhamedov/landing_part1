@@ -1,4 +1,4 @@
-const TELEGRAM_BOT_TOKEN = "7218494789:AAGsHl0nOcwcXB57wmbKnV5-jBWYr1W6MHc";
+const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = "@NB_Garden";
 const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
@@ -12,15 +12,16 @@ export default async function sendTelegram(e) {
   );
   formSendResultTitle.textContent = "";
   formSendResultDescription.textContent = "";
+  formSendResultTitle.style.color = "#000";
 
   const { name, phone, email } = Object.fromEntries(
     new FormData(form).entries()
   );
 
-  const text = `Заяка от ${name}\nEmail: ${email}\nТелефон: ${phone} `;
+  const text = `Заявка от ${name}\nEmail: ${email}\nТелефон: ${phone} `;
 
   try {
-    formBtn.textContent = "Отправка";
+    formBtn.textContent = "Отправка...";
     const response = await fetch(API, {
       method: "POST",
       headers: {
@@ -32,7 +33,7 @@ export default async function sendTelegram(e) {
     if (response.ok) {
       formSendResultTitle.textContent = "Спасибо за заявку!";
       formSendResultDescription.textContent =
-        "Наш менеджер свяжеться с вами в течение дня.";
+        "Наш менеджер свяжется с вами в течение дня.";
       form.reset();
     } else {
       throw new Error(response.statusText);
@@ -40,10 +41,12 @@ export default async function sendTelegram(e) {
   } catch (error) {
     console.error(error);
     formSendResultTitle.textContent = "Что-то пошло не так!";
-    formSendResultTitle.style.color - "red";
+    formSendResultTitle.style.color = "red";
     formSendResultDescription.textContent =
-      "Попробуйте воторить попытку немного позднее";
+      "Попробуйте повторить попытку немного позднее";
   } finally {
-    formBtn.textContent = "Отправить";
+    setTimeout(() => {
+      formBtn.textContent = "Отправить";
+    }, 1000);
   }
 }

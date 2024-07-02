@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Modal.css";
 import ConfirmModal from "../ConfirmModal/ConfirmModal";
-
 import sendTelegram from "../../utils/telegram";
 
 const Modal = ({ isOpen, onClose }) => {
@@ -74,17 +73,16 @@ const Modal = ({ isOpen, onClose }) => {
   };
 
   const openConfirmModal = (e) => {
-    onClose();
-
     sendTelegram(e);
 
     setTimeout(() => {
+      onClose();
       setFormValid(false);
       setName("");
       setPhone("");
       setEmail("");
       setOpenConfirm(true);
-    }, 100);
+    }, 1000);
 
     setTimeout(() => {
       setOpenConfirm(false);
@@ -246,7 +244,7 @@ const Modal = ({ isOpen, onClose }) => {
           </form>
         </div>
       </div>
-      {openConfirm && <ConfirmModal isOpen={openConfirm} />}
+      <ConfirmModal isOpen={openConfirm} />
     </>
   );
 };

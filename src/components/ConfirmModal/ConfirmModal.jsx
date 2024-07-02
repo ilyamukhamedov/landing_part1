@@ -5,9 +5,9 @@ const ConfirmModal = ({ isOpen }) => {
   return (
     <div className={`confirm ${isOpen ? "confirm__opened" : ""}`}>
       <div className="confirm__container">
-        <h1 className="confirm__title"> Спасибо за заявку!</h1>
+        <h1 className="confirm__title">Спасибо за заявку!</h1>
         <p className="confirm__description">
-          Наш менеджер свяжеться с вами в течение дня.
+          Наш менеджер свяжется с вами в течение дня.
         </p>
       </div>
     </div>
