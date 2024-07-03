@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card__container {
+  padding-block: 5rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+
+  overflow: hidden;
+}
+
+.card__article {
+  width: 450px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__data {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.card__name {
+  font-size: 25px;
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.card__position {
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  opacity: 0.6;
+  font-size: 17px;
+}
+
+.card_description {
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0;
+  font-size: 15px;
+}

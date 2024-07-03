@@ -7,6 +7,7 @@ import Author from "../Author/Author";
 import Reviews from "../Reviews/Reviews";
 import Navigation from "../Navigation /Navigation";
 import About from "../About/About";
+import Reviews1 from "../Reviews/Reviews1";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       <Header />
       <Author />
       <About />
-      <Reviews />
+      <Reviews1 />
+      {/* <Reviews /> */}
     </div>
   );
 };
