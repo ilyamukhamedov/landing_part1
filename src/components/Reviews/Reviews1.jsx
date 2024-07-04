@@ -2,30 +2,32 @@ import React, { useRef, useState, useEffect } from "react";
 import "./Reviews1.css";
 import { reviewsData } from "../../utils/constants";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectFade,
+  EffectCards,
+} from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-cards";
 
 const Reviews = () => {
-  const swiper = new Swiper(".card__content", {
-    loop: true,
-
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
   return (
     <section className="container">
       <div className="card__container swiper">
         <div className="card__content">
           <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCards]}
+            loop={true}
+            grabCursor={true}
             spaceBetween={50}
             slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
+            navigation
             onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
             className="swiper-wrapper"
           >
             {reviewsData.map((review) => (

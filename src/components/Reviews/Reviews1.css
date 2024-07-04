@@ -28,6 +28,8 @@
   border-radius: 1rem;
   text-align: center;
   z-index: 10;
+  width: 415px;
+  height: 418px;
 }
 
 .card__name {
