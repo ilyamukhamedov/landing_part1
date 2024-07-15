@@ -6,41 +6,47 @@ import dzen from "../../images/dzen.svg";
 
 const Navigation = () => {
   return (
-    <nav className="nav">
-      <ul className="nav__links">
-        <li>
-          <a href="#author" className="nav__link">
-            ОБ АВТОРЕ
+    <>
+      <nav className="nav">
+        <ul className="nav__links">
+          <li>
+            <a href="#author" className="nav__link">
+              ОБ АВТОРАХ
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="nav__link">
+              О КНИГЕ
+            </a>
+          </li>
+          <li>
+            <a href="#reviews" className="nav__link">
+              ФРАГМЕНТЫ И ОТЗЫВЫ
+            </a>
+          </li>
+          <li>
+            <a href="/" className="nav__link">
+              ПОЛИТИКА ПРОДАЖ
+            </a>
+          </li>
+        </ul>
+        <div className="social">
+          <a href="/" target="_blank">
+            <img className="social__icon" src={telegram} alt="Telegram icon" />
           </a>
-        </li>
-        <li>
-          <a href="#about" className="nav__link">
-            О КНИГЕ
+          <a href="https://dzen.ru/nbgarden" target="_blank">
+            <img className="social__icon" src={dzen} alt="Yandex Dzen icon" />
           </a>
-        </li>
-        <li>
-          <a href="#reviews" className="nav__link">
-            РЕЦЕНЗИИ
+          <a href="https://www.instagram.com/nbgarden/" target="_blank">
+            <img
+              className="social__icon"
+              src={instagram}
+              alt="Instagram icon"
+            />
           </a>
-        </li>
-        <li>
-          <a href="/" className="nav__link">
-            КОНТАКТЫ
-          </a>
-        </li>
-      </ul>
-      <div className="social">
-        <a href="/" target="_blank">
-          <img className="social__icon" src={telegram} alt="Telegram icon" />
-        </a>
-        <a href="https://dzen.ru/nbgarden" target="_blank">
-          <img className="social__icon" src={dzen} alt="Yandex Dzen icon" />
-        </a>
-        <a href="https://www.instagram.com/nbgarden/" target="_blank">
-          <img className="social__icon" src={instagram} alt="Instagram icon" />
-        </a>
-      </div>
-    </nav>
+        </div>
+      </nav>
+    </>
   );
 };
 

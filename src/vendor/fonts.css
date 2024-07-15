@@ -32,3 +32,10 @@
   font-weight: 400;
   src: url(./fonts/helvetica-light.ttf) format("ttf");
 }
+
+@font-face {
+  font-family: "Involve";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Involve-Regular.otf) format("otf");
+}
