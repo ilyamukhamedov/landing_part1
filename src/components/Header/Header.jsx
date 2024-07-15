@@ -1,43 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
-import Modal from "../Modal/Modal";
-import ConfirmModal from "../ConfirmModal/ConfirmModal";
+import Navigation from "../Navigation /Navigation";
+import book from "../../images/bookImage.png";
 
-const Header = () => {
-  const [open, setOpen] = useState(false);
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
+const Header = ({ handleOpen }) => {
   return (
-    <>
-      <div className="header">
-        <div className="header__container">
-          <div>
-            <h1 className="header__title">
-              Наталья Борисова
-              <br />
-              <br />
-              <br /> NB. Сад
-            </h1>
-            <button
-              type="button"
-              className="header__button"
-              onClick={handleOpen}
-            >
-              Купить книгу
-            </button>
-            <Modal isOpen={open} onClose={handleClose} />
-          </div>
-          <div className="header__book"> </div>
+    <div className="header">
+      <Navigation />
+      <div className="header__container">
+        <div className="header__text">
+          <h1 className="header__name">Наталья Борисова</h1>
+          <h2 className="header__title">NB. Сад</h2>
+          <p className="header__description">
+            17 проектов ландшафтной <br />
+            мастерской NB-GARDEN
+          </p>
+          <button type="button" className="header__button" onClick={handleOpen}>
+            Cвязаться
+          </button>
         </div>
+        <img className="header__book" src={book} alt="image of the book" />
       </div>
-    </>
+    </div>
   );
 };
 
