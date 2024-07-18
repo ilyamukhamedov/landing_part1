@@ -20,12 +20,12 @@ const Navigation = () => {
             </a>
           </li>
           <li>
-            <a href="#reviews" className="nav__link">
+            <a href="#fragments" className="nav__link">
               ФРАГМЕНТЫ И ОТЗЫВЫ
             </a>
           </li>
           <li>
-            <a href="/" className="nav__link">
+            <a href="#policy" className="nav__link">
               ПОЛИТИКА ПРОДАЖ
             </a>
           </li>

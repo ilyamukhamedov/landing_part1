@@ -10,6 +10,9 @@ import Reviews from "../Reviews/Reviews";
 import Navigation from "../Navigation /Navigation";
 import About from "../About/About";
 import Reviews1 from "../Reviews/Reviews1";
+import Fragment from "../Fragment/Fragment";
+import Footer from "../Footer/Footer";
+import Policy from "../Policy/Policy";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -28,8 +31,11 @@ const App = () => {
       <Header handleOpen={handleOpen} />
       <Author />
       <About />
+      <Fragment />
       <Reviews1 />
       <Reviews />
+      <Policy handleOpen={handleOpen} />
+      <Footer />
       <Modal isOpen={open} onClose={handleClose} />
     </div>
   );

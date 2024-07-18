@@ -1,13 +1,14 @@
 .author {
   background-color: #f0f1e9;
   height: 100vh;
+  align-content: center;
 }
 
 .author__container {
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  padding-top: 70px;
+
   gap: 130px;
   max-width: 1245px;
   margin: 0 auto;

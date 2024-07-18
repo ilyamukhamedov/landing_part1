@@ -96,7 +96,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="reviews" id="reviews">
+    <div className="reviews">
       <h1 className="reviews__title">РЕЦЕНЗИИ</h1>
       <div className="reviews__container" {...swipeHandlers}>
         <i
