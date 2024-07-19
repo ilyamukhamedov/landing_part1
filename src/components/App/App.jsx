@@ -9,7 +9,7 @@ import Author from "../Author/Author";
 import Reviews from "../Reviews/Reviews";
 import Navigation from "../Navigation /Navigation";
 import About from "../About/About";
-import Reviews1 from "../Reviews/Reviews1";
+import Reviews1 from "../Reviews/Reviews";
 import Fragment from "../Fragment/Fragment";
 import Footer from "../Footer/Footer";
 import Policy from "../Policy/Policy";
@@ -27,12 +27,10 @@ const App = () => {
 
   return (
     <div className="app">
-      {/* <Navigation /> */}
       <Header handleOpen={handleOpen} />
       <Author />
       <About />
       <Fragment />
-      <Reviews1 />
       <Reviews />
       <Policy handleOpen={handleOpen} />
       <Footer />

@@ -1,118 +1,86 @@
 .reviews {
-  margin: 60px;
-}
-
-.reviews__title {
-  font-family: "Micra", sans-serif;
-  font-weight: normal;
-  padding-top: 80px;
-  font-size: 40px;
-  color: #fff;
-  margin-top: 0;
+  background-color: #f0f1e9;
+  height: 100vh;
+  align-content: center;
 }
 
 .reviews__container {
+  padding: 20px;
+  /* max-width: 1245px; */
+  margin: 0 auto;
   position: relative;
+  padding-top: 20px;
 }
 
-.reviews__wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - (50px * 2 / 3));
-  gap: 50px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: 0;
+.swiper-wrapper {
+  padding: 40px 0 40px;
 }
 
-.reviews__wrapper::-webkit-scrollbar {
-  display: none;
+.swiper-pagination-bullet-active {
+  background: #000 !important;
 }
 
-.cards {
-  scroll-snap-align: start;
-  list-style: none;
-  background: #f4f3f2;
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #000;
+  font-size: 25px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transition: 0.2s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.5;
+}
+
+.card__data {
+  background-color: #fff;
+  padding: 40px;
   border-radius: 40px;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
-  padding: 40px 30px;
+  gap: 10px;
 }
 
-.scrolling {
-  scroll-behavior: auto;
-}
-
-.dragging {
-  cursor: grab;
-  user-select: none;
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-
-.cards__title {
-  font-size: 25px;
+.card__name {
+  font-size: 20px;
   font-family: "Micra", sans-serif;
   font-weight: normal;
-  margin-top: 0;
+  margin: 0;
 }
 
-.cards__position {
-  font-family: "Helvetica", sans-serif;
+.card__position {
+  font-family: "Involve", sans-serif;
   font-weight: lighter;
+  margin: 0;
   opacity: 0.6;
-  font-size: 17px;
+  font-size: 16px;
 }
 
-.cards__description {
-  font-family: "Helvetica", sans-serif;
+.card__description {
+  font-family: "Involve", sans-serif;
   font-weight: lighter;
-  margin-bottom: 0;
-  font-size: 15px;
+  margin: 0;
+  font-size: 14px;
 }
 
-.reviews i {
-  height: 50px;
-  width: 50px;
-  background: #778d45;
-  transition: 0.2s ease;
-  border-radius: 50%;
-  position: absolute;
-  text-align: center;
-  cursor: pointer;
-  line-height: 50px;
-  top: 50%;
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.reviews i:hover {
-  background: #91a85c;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.reviews i:first-child {
-  left: -21px;
-}
-
-.reviews i:last-child {
-  right: -21px;
-}
-
-@media screen and (max-width: 1200px) {
-  .reviews__wrapper {
-    grid-auto-columns: calc((100% / 2) - (40px * 2 / 3));
+@media screen and (max-width: 500px) {
+  .reviews__container {
+    padding: 5px;
+    padding-top: 20px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .reviews__wrapper {
-    grid-auto-columns: 100%;
+@media screen and (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .card__data {
+    padding: 40px 20px;
   }
 }
