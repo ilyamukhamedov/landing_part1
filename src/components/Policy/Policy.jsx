@@ -1,21 +1,24 @@
 import React from "react";
 import "./Policy.css";
 
-const Policy = ({ handleOpen }) => {
+const Policy = () => {
   return (
     <div className="policy" id="policy">
       <div className="policy__container">
         <h1 className="policy__title">Политика Продаж</h1>
         <p className="policy__description">
-          Мы предлагаем возможность оптовой покупки от 6 единиц товара. Для
-          оформления заказа, пожалуйста, заполните форму ниже, и мы свяжется с
-          вами в кратчайшие сроки для уточнения деталей:
+          Дорогие читатели! <br />
+          <br />
+          Мы сожалеем, что первая партия наших книг распродана.
+          <br /> Однако не стоит расстраиваться! Уже в августе 2025 года вас
+          ждет долгожданная вторая часть. Переходите на сайт и будьте первыми,
+          кто узнает о поступлении новых книг!
         </p>
-        <button className="policy__button" onClick={handleOpen}>
-          связаться
+        <button className="policy__button" onClick={""}>
+          новая книга
         </button>
 
-        <p className="policy__text">
+        {/* <p className="policy__text">
           Если вас инетерсеует розничная покупка, вы можете обратиться к нашим
           партнерам по адресу:
         </p>
@@ -24,7 +27,7 @@ const Policy = ({ handleOpen }) => {
           <li>Лавка Архитектора</li>
           <li>...</li>
           <li>...</li>
-        </ol>
+        </ol> */}
       </div>
     </div>
   );

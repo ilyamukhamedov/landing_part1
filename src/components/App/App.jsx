@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import "./App.css";
 import Modal from "../Modal/Modal";
-
-// import BookDetails from "../BookDetails/BookDetails";
-// import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import Header from "../Header/Header";
 import Author from "../Author/Author";
 import Reviews from "../Reviews/Reviews";
-import Navigation from "../Navigation /Navigation";
 import About from "../About/About";
-import Reviews1 from "../Reviews/Reviews";
 import Fragment from "../Fragment/Fragment";
 import Footer from "../Footer/Footer";
 import Policy from "../Policy/Policy";
+import ModalPreview from "../ModalPreview/ModalPreview";
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  const [openPreview, setOpenPreview] = useState(false);
+  const [currentImage, setCurrentImage] = useState("");
 
   const handleClose = () => {
     setOpen(false);
@@ -25,16 +23,30 @@ const App = () => {
     setOpen(true);
   };
 
+  const handleOpenPreview = (imageSrc) => {
+    setCurrentImage(imageSrc);
+    setOpenPreview(true);
+  };
+
+  const handleClosePreview = () => {
+    setOpenPreview(false);
+  };
+
   return (
     <div className="app">
       <Header handleOpen={handleOpen} />
       <Author />
       <About />
-      <Fragment />
+      <Fragment handleOpen={handleOpenPreview} />
       <Reviews />
-      <Policy handleOpen={handleOpen} />
+      <Policy />
       <Footer />
       <Modal isOpen={open} onClose={handleClose} />
+      <ModalPreview
+        isOpen={openPreview}
+        onClose={handleClosePreview}
+        imageSrc={currentImage}
+      />
     </div>
   );
 };

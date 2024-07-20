@@ -31,9 +31,9 @@ const Navigation = () => {
           </li>
         </ul>
         <div className="social">
-          <a href="/" target="_blank">
+          {/* <a href="/" target="_blank">
             <img className="social__icon" src={telegram} alt="Telegram icon" />
-          </a>
+          </a> */}
           <a href="https://dzen.ru/nbgarden" target="_blank">
             <img className="social__icon" src={dzen} alt="Yandex Dzen icon" />
           </a>

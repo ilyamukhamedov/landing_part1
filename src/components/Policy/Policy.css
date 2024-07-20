@@ -1,8 +1,9 @@
 .policy {
   background-color: #474f46;
-  height: 65vh;
+  height: 70vh;
   align-content: center;
   border-bottom: 1px solid #f0f1e9;
+  padding: 20px;
 }
 
 .policy__container {
@@ -24,14 +25,16 @@
   font-weight: normal;
   font-size: 21px;
   color: #f0f1e9;
-  padding-top: 50px;
+  padding-top: 30px;
   margin: 0;
+
+  line-height: 25px;
 }
 
 .policy__button {
   background-color: rgba(216, 216, 216, 0.25);
   padding: 22px 24px;
-  margin-top: 20px;
+  margin-top: 60px;
   border: 3px solid rgb(216, 216, 216, 0.25);
   border-radius: 17px;
   color: #fff;

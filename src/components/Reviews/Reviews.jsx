@@ -16,21 +16,19 @@ const Reviews = () => {
           loop={true}
           grabCursor={true}
           spaceBetween={50}
-          pagination={
-            {
-              // dynamicBullets: true,
-            }
-          }
+          pagination={{
+            clickable: true,
+          }}
           breakpoints={{
             768: {
               slidesPerView: 2,
             },
-            1024: {
+            1125: {
               slidesPerView: 3,
             },
           }}
           navigation={true}
-          className="swiper-wrapper"
+          className=" swiper-wrapper"
         >
           {reviewsData.map((review) => (
             <SwiperSlide

@@ -6,9 +6,6 @@
 
 .author__container {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-
   gap: 130px;
   max-width: 1245px;
   margin: 0 auto;
@@ -42,7 +39,15 @@
 .author__description {
   margin: 0;
   font-family: "Involve", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #222;
+}
+
+.author__name {
+  margin: 0;
+  font-family: "Micra", sans-serif;
+  font-size: 20px;
   font-weight: normal;
   color: #222;
 }
