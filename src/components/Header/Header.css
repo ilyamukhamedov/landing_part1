@@ -1,16 +1,17 @@
 .header {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   background: no-repeat url(../../images/background.jpg) center;
   background-size: cover;
   height: 100vh;
+  padding: 0 20px;
 }
 
 .header__container {
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 100px;
   width: 100%;
   margin: 0 auto;
@@ -22,6 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .header__name {
@@ -32,7 +34,6 @@
   font-weight: normal;
   letter-spacing: 1px;
   margin: 0;
-  padding-bottom: 20px;
   filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.25));
 }
 
@@ -40,7 +41,6 @@
   color: #fff;
   font-family: "Micra", sans-serif;
   font-size: 120px;
-  line-height: 144px;
   font-weight: normal;
   filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.25));
   letter-spacing: 1px;
@@ -48,6 +48,7 @@
 }
 
 .header__description {
+  margin: 0;
   color: #fff;
   font-family: "Micra", sans-serif;
   font-size: 23px;
@@ -61,7 +62,6 @@
 .header__button {
   background-color: rgba(216, 216, 216, 0.25);
   padding: 22px 24px;
-  margin-top: 20px;
   border: 3px solid rgb(216, 216, 216, 0.25);
   border-radius: 17px;
   color: #fff;
@@ -80,6 +80,82 @@
   background-size: cover;
   filter: drop-shadow(-20px 20px 5px rgba(0, 0, 0, 0.6));
   max-width: 485px;
-  max-height: 439px;
+
   object-fit: cover;
+}
+
+@media screen and (max-width: 1250px) {
+  .header {
+    padding: 0 60px;
+  }
+  .header__name {
+    font-size: 25px;
+  }
+
+  .header__title {
+    font-size: 100px;
+  }
+
+  .header__description {
+    font-size: 17px;
+  }
+
+  .header__button {
+    font-size: 17px;
+  }
+
+  .header__book {
+    max-width: 400px;
+  }
+
+  .header__text {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header__container {
+    flex-direction: column;
+    padding-top: 40px;
+    align-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding: 0 10px;
+  }
+
+  .header__container {
+    padding-top: 60px;
+    height: 85vh;
+  }
+  .header__name {
+    font-size: 15px;
+  }
+
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header__description {
+    font-size: 12px;
+  }
+
+  .header__button {
+    font-size: 17px;
+  }
+
+  .header__book {
+    max-width: 290px;
+  }
+
+  .header__text {
+    /* gap: 20px; */
+    justify-content: space-between;
+  }
 }
