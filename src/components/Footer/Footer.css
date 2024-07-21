@@ -58,4 +58,27 @@
   font-size: 18px;
   color: #f0f1e9;
   margin: 0;
+  transition: 0.2s ease;
+}
+
+.footer__info:hover {
+  transform: scale(1.01);
+  opacity: 0.7;
+}
+
+.footer__block {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__img1 {
+  width: 18px;
+  height: 18px;
+  filter: invert(95%) sepia(0%) saturate(1%) hue-rotate(283deg) brightness(98%)
+    contrast(81%);
 }

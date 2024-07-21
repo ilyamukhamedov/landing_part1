@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import whatsapp from "../../images/whatsappcolor.svg";
+import mail from "../../images/mail.svg";
 
 const Footer = () => {
   return (
@@ -42,9 +44,28 @@ const Footer = () => {
               gap: "10px",
             }}
           >
-            <p className="footer__info">8-915-096-39-45</p>
-            <p className="footer__info">book@nb-garden.ru</p>
-            <p className="footer__info">TELEGRAM</p>
+            <div className="footer__block">
+              <img className="footer__img" src={whatsapp} alt="whatsApp icon" />
+              <a
+                className="footer__info"
+                href="https://wa.me/+79169926957"
+                target="_blank"
+              >
+                +7 (916) 992-69-57
+              </a>
+            </div>
+            <div className="footer__block">
+              <img className="footer__img1" src={mail} alt="mail icon" />
+              <a
+                className="footer__info"
+                href="mailto:book@nb-garden.ru"
+                target="_blank"
+              >
+                book@nb-garden.ru
+              </a>
+            </div>
+
+            {/* <p className="footer__info">TELEGRAM</p> */}
           </div>
         </div>
       </div>
