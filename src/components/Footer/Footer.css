@@ -56,10 +56,12 @@
 .footer__info {
   font-family: "Involve", sans-serif;
   font-weight: normal;
+  line-height: 20px;
   font-size: 18px;
   color: #f0f1e9;
   margin: 0;
   transition: 0.2s ease;
+  /* text-decoration: none; */
 }
 
 .footer__info:hover {
@@ -70,16 +72,23 @@
 .footer__block {
   display: flex;
   gap: 10px;
+  /* align-items: center; */
+}
+
+.footer__web {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .footer__img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 
 .footer__img1 {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   filter: invert(95%) sepia(0%) saturate(1%) hue-rotate(283deg) brightness(98%)
     contrast(81%);
 }

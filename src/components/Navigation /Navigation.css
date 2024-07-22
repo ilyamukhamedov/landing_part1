@@ -19,15 +19,18 @@
   display: none;
   width: 30px;
   height: 30px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(337deg)
+    brightness(106%) contrast(104%);
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
 .nav__links {
   display: flex;
   align-items: center;
-  padding-left: 200px;
+  padding-left: 120px;
   margin: 0;
-  gap: 50px;
+  gap: 40px;
   list-style: none;
   line-height: 13px;
   filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.25));
@@ -137,10 +140,13 @@
     top: 20px;
   }
 
-  .nav__close {
-    width: 30px;
-    height: 30px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(337deg)
-      brightness(106%) contrast(104%);
+  .nav__btn-active {
+    transform: rotate3d(1, 0, 0, 180deg);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .nav__container {
+    transform: scale(1.5);
   }
 }

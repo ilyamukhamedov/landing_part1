@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import telegram from "../../images/telegram.svg";
+import nb from "../../images/Nb.svg";
 import instagram from "../../images/instagram.svg";
 import dzen from "../../images/dzen.svg";
 import burger from "../../images/burger_button.svg";
@@ -46,15 +46,25 @@ const Navigation = () => {
                 ПОЛИТИКА ПРОДАЖ
               </a>
             </li>
+
+            <li>
+              <a
+                href="#contacts"
+                className="nav__link"
+                onClick={handleOpenMenu}
+              >
+                КОНТАКТЫ
+              </a>
+            </li>
           </ul>
           <div className="social">
-            {/* <a href="/" target="_blank">
-            <img className="social__icon" src={telegram} alt="Telegram icon" />
-          </a> */}
+            <a href="https://nbgarden.ru" target="_blank">
+              <img className="social__icon" src={nb} alt="NB-Garden icon" />
+            </a>
             <a href="https://dzen.ru/nbgarden" target="_blank">
               <img className="social__icon" src={dzen} alt="Yandex Dzen icon" />
             </a>
-            <a href="https://www.instagram.com/nbgarden/" target="_blank">
+            <a href="https://www.instagram.com/nbgarden" target="_blank">
               <img
                 className="social__icon"
                 src={instagram}
@@ -64,7 +74,7 @@ const Navigation = () => {
           </div>
         </div>
         <img
-          className={`nav__btn ${!openMenu ? "nav__close" : ""}`}
+          className={`nav__btn ${openMenu ? "nav__btn-active" : ""}`}
           src={openMenu ? close : burger}
           onClick={handleOpenMenu}
           alt={close}

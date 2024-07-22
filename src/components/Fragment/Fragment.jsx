@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Fragment.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+
 import page1 from "../../images/page_1.jpg";
 import page2 from "../../images/page_2.jpg";
 import page3 from "../../images/page_3.jpg";
@@ -16,20 +18,27 @@ const Fragments = ({ handleOpen }) => {
         <h1 className="fragment__title">ФРАГМЕНТЫ</h1>
         <Swiper
           effect={"coverflow"}
+          speed={600}
           grabCursor={true}
-          centeredSlides={true}
           slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 2,
             stretch: 400,
             depth: 50,
-            modifier: 2,
+            modifier: 1,
             slideShadows: false,
           }}
           pagination={{
+            bulletActiveClass: "swiper-pagination-bullet-active1",
+            el: ".swiper-pagination",
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination]}
+          navigation={{
+            nextEl: ".swiper__button-next",
+            prevEl: ".swiper__button-prev",
+            clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="fragment__swiper"
         >
           <SwiperSlide>
@@ -56,6 +65,17 @@ const Fragments = ({ handleOpen }) => {
               onClick={() => handleOpen(page3)}
             />
           </SwiperSlide>
+          <div className="slider__controler">
+            <div className="swiper__button swiper__button-prev">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div className="swiper-pagination swiper__pag">
+              <div className="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
+            </div>
+            <div className="swiper__button swiper__button-next">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
         </Swiper>
       </div>
     </div>

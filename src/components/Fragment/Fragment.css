@@ -7,6 +7,7 @@
 
 .fragment__container {
   max-width: 1245px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -19,9 +20,52 @@
   letter-spacing: 2px;
 }
 
+.fragment__swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .fragment__image {
   max-width: 1000px;
+  width: 100%;
   max-height: 470px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.slider__controler {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 100px;
+  /* justify-content: space-around; */
+  color: #f0f1e9;
+  width: 100%;
+}
+
+.swiper__pag {
+}
+
+.swiper-pagination-bullet-active1 {
+  background: #f0f1e9;
+
+  opacity: 1;
+}
+
+.swiper .swiper__button:hover {
+  opacity: 0.4;
+}
+
+.swiper__button {
+  max-height: 32px;
+  font-size: 31px;
+
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.2s ease;
 }

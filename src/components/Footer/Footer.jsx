@@ -2,10 +2,11 @@ import React from "react";
 import "./Footer.css";
 import whatsapp from "../../images/whatsappcolor.svg";
 import mail from "../../images/mail.svg";
+import nb from "../../images/Nb.svg";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="contacts">
       <div className="footer__container">
         <h1 className="footer__title">контакты</h1>
         <div className="footer__wrapper">
@@ -64,7 +65,25 @@ const Footer = () => {
                 book@nb-garden.ru
               </a>
             </div>
-
+            <div className="footer__block">
+              <img className="footer__img1" src={nb} alt="mail icon" />
+              <div className="footer__web">
+                <a
+                  className="footer__info"
+                  href="https://nbgarden.ru"
+                  target="_blank"
+                >
+                  nbgarden.ru
+                </a>
+                <a
+                  className="footer__info"
+                  href="https://nb-garden.ru"
+                  target="_blank"
+                >
+                  nb-garden.ru
+                </a>
+              </div>
+            </div>
             {/* <p className="footer__info">TELEGRAM</p> */}
           </div>
         </div>
