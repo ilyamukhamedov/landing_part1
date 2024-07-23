@@ -73,12 +73,17 @@ const Navigation = () => {
             </a>
           </div>
         </div>
-        <img
+
+        <div
           className={`nav__btn ${openMenu ? "nav__btn-active" : ""}`}
-          src={openMenu ? close : burger}
           onClick={handleOpenMenu}
-          alt={close}
-        />
+        >
+          {openMenu ? (
+            <ion-icon name="close-outline"></ion-icon>
+          ) : (
+            <ion-icon name="menu-outline"></ion-icon>
+          )}
+        </div>
       </nav>
     </>
   );
