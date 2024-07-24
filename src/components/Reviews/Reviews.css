@@ -71,12 +71,6 @@
   font-size: 14px;
 }
 
-@media screen and (max-width: 500px) {
-  .reviews {
-    padding: 5px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -85,5 +79,10 @@
 
   .card__data {
     padding: 40px 20px;
+  }
+
+  .reviews {
+    padding: 20px;
+    height: fit-content;
   }
 }

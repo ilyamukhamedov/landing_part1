@@ -25,7 +25,7 @@
   /* margin: auto; */
   transform: scale(0.9);
   transition: transform 0.3s ease;
-  padding: 20px;
+  padding: 5px;
 }
 
 .modal__preview-opened .modal__preview-container {
@@ -34,20 +34,19 @@
 
 .modal__preview-button {
   position: absolute;
-  top: -20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   background: transparent url(../../images/close.svg) no-repeat center;
   background-size: contain;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border: none;
-  color: #fff;
   margin: 0;
   padding: 0;
   transition: 0.2s ease;
   cursor: pointer;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(337deg)
-    brightness(106%) contrast(104%);
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(337deg)
+    brightness(106%) contrast(104%); */
 }
 
 .modal__preview-button:hover {
@@ -55,6 +54,7 @@
 }
 
 .modal__preview-image {
-  max-width: 1300px;
+  /* max-width: 1300px; */
+  object-fit: contain;
   width: 100%;
 }

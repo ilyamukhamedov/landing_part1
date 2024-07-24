@@ -10,41 +10,13 @@ const Footer = () => {
       <div className="footer__container">
         <h1 className="footer__title">контакты</h1>
         <div className="footer__wrapper">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              gap: "10px",
-            }}
-          >
+          <div className="footer__box">
             <h2 className="footer__name">NB-Garden</h2>
             <p className="footer__text">
               Ландшафтная мастерская <br /> Натальи Борисовой
             </p>
           </div>
-          {/* <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-            }}
-          >
-            <h2 className="footer__name">контакты</h2>
-            <ol className="footer__list">
-              <li className="footer__item">Магазины партнеры </li>
-              <li className="footer__item">Магазины партнеры </li>
-              <li className="footer__item">Магазины партнеры </li>
-            </ol>
-          </div> */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              gap: "10px",
-            }}
-          >
+          <div className="footer__box">
             <div className="footer__block">
               <img className="footer__img" src={whatsapp} alt="whatsApp icon" />
               <a
@@ -56,7 +28,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="footer__block">
-              <img className="footer__img1" src={mail} alt="mail icon" />
+              <img
+                className="footer__img footer__img-white"
+                src={mail}
+                alt="mail icon"
+              />
               <a
                 className="footer__info"
                 href="mailto:book@nb-garden.ru"
@@ -66,7 +42,11 @@ const Footer = () => {
               </a>
             </div>
             <div className="footer__block">
-              <img className="footer__img1" src={nb} alt="mail icon" />
+              <img
+                className="footer__img footer__img-white"
+                src={nb}
+                alt="mail icon"
+              />
               <div className="footer__web">
                 <a
                   className="footer__info"
@@ -84,10 +64,19 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            {/* <p className="footer__info">TELEGRAM</p> */}
           </div>
         </div>
       </div>
+      <p className="footer__copyright">
+        Copyright © 2024 by{" "}
+        <a
+          className="footer__link"
+          href="https://www.linkedin.com/in/ilyamukhamedov/"
+          target="_blank"
+        >
+          Ilya
+        </a>
+      </p>
     </div>
   );
 };

@@ -3,8 +3,6 @@ import "./Navigation.css";
 import nb from "../../images/Nb.svg";
 import instagram from "../../images/instagram.svg";
 import dzen from "../../images/dzen.svg";
-import burger from "../../images/burger_button.svg";
-import close from "../../images/close.svg";
 
 const Navigation = () => {
   const [openMenu, setOpenMenu] = useState(false);

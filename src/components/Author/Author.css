@@ -7,7 +7,8 @@
 
 .author__container {
   display: flex;
-  gap: 130px;
+  justify-content: space-between;
+  /* gap: 130px; */
   max-width: 1245px;
   margin: 0 auto;
 }
@@ -15,6 +16,8 @@
 .author__text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   gap: 30px;
 }
 
@@ -23,7 +26,6 @@
   font-weight: normal;
   letter-spacing: 2px;
   font-size: 35px;
-  line-height: 42px;
   color: #222;
   margin: 0;
 }
@@ -31,7 +33,6 @@
 .about__image {
   width: 100%;
   max-width: 642px;
-  max-height: 386px;
   object-fit: cover;
   border-radius: 45px;
   padding-top: 20px;
@@ -39,6 +40,7 @@
 
 .author__description {
   margin: 0;
+  max-width: 640px;
   font-family: "Involve", sans-serif;
   font-size: 20px;
   font-weight: normal;
@@ -59,4 +61,46 @@
   max-height: 567px;
   object-fit: cover;
   border-radius: 45px;
+}
+
+@media screen and (max-width: 1250px) {
+  .author__title {
+    font-size: 21px;
+  }
+
+  .author__description {
+    font-size: 18px;
+  }
+
+  .author__name {
+    font-size: 18px;
+  }
+
+  .author__image {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .author__container {
+    padding: 40px 0;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .author {
+    height: auto;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .author__name {
+    font-size: 16px;
+  }
+
+  .author__description {
+    font-size: 16px;
+  }
 }

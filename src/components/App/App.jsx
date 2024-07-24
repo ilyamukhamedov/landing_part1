@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import Modal from "../Modal/Modal";
 import Header from "../Header/Header";
 import Author from "../Author/Author";
 import Reviews from "../Reviews/Reviews";
@@ -11,17 +10,17 @@ import Policy from "../Policy/Policy";
 import ModalPreview from "../ModalPreview/ModalPreview";
 
 const App = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const [openPreview, setOpenPreview] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  // const handleOpen = () => {
+  //   setOpen(true);
+  // };
 
   const handleOpenPreview = (imageSrc) => {
     setCurrentImage(imageSrc);
@@ -34,14 +33,14 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header handleOpen={handleOpen} />
+      <Header />
       <Author />
       <About />
       <Fragment handleOpen={handleOpenPreview} />
       <Reviews />
       <Policy />
       <Footer />
-      <Modal isOpen={open} onClose={handleClose} />
+      {/* <Modal isOpen={open} onClose={handleClose} /> */}
       <ModalPreview
         isOpen={openPreview}
         onClose={handleClosePreview}

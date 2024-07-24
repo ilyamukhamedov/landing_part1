@@ -65,3 +65,30 @@
   margin: 0;
   padding-top: 20px;
 }
+
+@media screen and (max-width: 1150px) {
+  .policy__title {
+    font-size: 21px;
+  }
+
+  .policy__description {
+    font-size: 18px;
+  }
+
+  .policy__button {
+    font-size: 20px;
+  }
+
+  .policy {
+    padding: 40px 20px;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .policy__button {
+    margin-top: 30px;
+    padding: 30px 24px;
+    width: 100%;
+  }
+}

@@ -127,6 +127,11 @@
     align-content: center;
     gap: 30px;
   }
+
+  .header__book {
+    max-width: 550px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -153,13 +158,15 @@
     font-size: 17px;
   }
 
-  .header__book {
-    max-width: 290px;
-  }
-
   .header__text {
     /* gap: 20px; */
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__book {
+    max-width: 290px;
   }
 }
 

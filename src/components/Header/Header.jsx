@@ -3,7 +3,7 @@ import "./Header.css";
 import Navigation from "../Navigation /Navigation";
 import book from "../../images/bookImage.png";
 
-const Header = ({ handleOpen }) => {
+const Header = () => {
   return (
     <div className="header">
       <Navigation />
@@ -15,8 +15,8 @@ const Header = ({ handleOpen }) => {
             17 проектов ландшафтной <br />
             мастерской NB-GARDEN
           </p>
-          <button type="button" className="header__button" onClick={handleOpen}>
-            Cвязаться
+          <button type="button" className="header__button" onClick={""}>
+            новая книга
           </button>
         </div>
         <img className="header__book" src={book} alt="image of the book" />
