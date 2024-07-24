@@ -1,7 +1,4 @@
 .header {
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
   background: no-repeat url(../../images/background.jpg) center;
   background-size: cover;
   height: 100vh;
@@ -12,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 100px; */
   width: 100%;
   height: 80%;
   margin: 0 auto;
@@ -82,9 +78,8 @@
 .header__book {
   background-size: cover;
   filter: drop-shadow(-20px 20px 5px rgba(0, 0, 0, 0.6));
-  max-width: 485px;
+  max-width: 600px;
   width: 100%;
-
   object-fit: cover;
 }
 
@@ -94,6 +89,10 @@
   }
   .header__name {
     font-size: 25px;
+  }
+
+  .header__container {
+    padding-top: 60px;
   }
 
   .header__title {
@@ -106,10 +105,6 @@
 
   .header__button {
     font-size: 17px;
-  }
-
-  .header__book {
-    max-width: 400px;
   }
 
   .header__text {
@@ -127,20 +122,16 @@
     align-content: center;
     gap: 30px;
   }
-
-  .header__book {
-    max-width: 550px;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 650px) {
   .header {
-    padding: 0 20px;
+    height: fit-content;
+    padding: 40px 20px;
   }
 
   .header__container {
-    padding-top: 60px;
+    padding-top: 0;
   }
   .header__name {
     font-size: 15px;
@@ -159,14 +150,7 @@
   }
 
   .header__text {
-    /* gap: 20px; */
     justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header__book {
-    max-width: 290px;
   }
 }
 
