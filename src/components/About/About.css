@@ -1,8 +1,8 @@
 .about {
   background-color: #474f46;
-  height: 100vh;
+  height: fit-content;
   align-content: center;
-  padding: 0 20px;
+  padding: 120px 20px;
 }
 
 .about__container {
@@ -60,7 +60,6 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    height: fit-content;
     padding: 0 40px;
   }
 

@@ -1,8 +1,8 @@
 .reviews {
   background-color: #f0f1e9;
-  height: 100vh;
+  height: fit-content;
   align-content: center;
-  padding: 0 20px;
+  padding: 120px 20px;
 }
 
 .reviews__container {
@@ -14,10 +14,6 @@
 
 .swiper-wrapper {
   padding: 40px 0 40px;
-}
-
-.swiper-slide {
-  /* filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.6)); */
 }
 
 .swiper-pagination-bullet-active {
