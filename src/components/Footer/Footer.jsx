@@ -18,7 +18,12 @@ const Footer = () => {
           </div>
           <div className="footer__box">
             <div className="footer__block">
-              <img className="footer__img" src={whatsapp} alt="whatsApp icon" />
+              <img
+                loading="lazy"
+                className="footer__img"
+                src={whatsapp}
+                alt="whatsApp icon"
+              />
               <a
                 className="footer__info"
                 href="https://wa.me/+79169926957"
@@ -29,6 +34,7 @@ const Footer = () => {
             </div>
             <div className="footer__block">
               <img
+                loading="lazy"
                 className="footer__img footer__img-white"
                 src={mail}
                 alt="mail icon"
@@ -43,6 +49,7 @@ const Footer = () => {
             </div>
             <div className="footer__block">
               <img
+                loading="lazy"
                 className="footer__img footer__img-white"
                 src={nb}
                 alt="mail icon"

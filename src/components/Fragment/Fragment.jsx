@@ -6,16 +6,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-
-import page1 from "../../images/page_1.jpg";
-import page2 from "../../images/page_2.jpg";
-import page3 from "../../images/page_3.jpg";
-import mobile1 from "../../images/1.jpg";
-import mobile2 from "../../images/2.jpg";
-import mobile28 from "../../images/28.jpg";
-import mobile29 from "../../images/29.jpg";
-import mobile32 from "../../images/32.jpg";
-import mobile33 from "../../images/33.jpg";
+import { fragmentDesktop, fragmentMobile } from "../../utils/constants";
 
 const Fragments = ({ handleOpen }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,7 +26,6 @@ const Fragments = ({ handleOpen }) => {
           effect={"coverflow"}
           speed={600}
           grabCursor={true}
-          centeredSlides={true}
           slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 2,
@@ -57,89 +47,34 @@ const Fragments = ({ handleOpen }) => {
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="fragment__swiper"
         >
-          {!isMobile ? (
-            <>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-desktop"
-                  src={page1}
-                  alt="image of the book"
-                  onClick={() => handleOpen(page1)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-desktop"
-                  src={page2}
-                  alt="image of the book"
-                  onClick={() => handleOpen(page2)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-desktop"
-                  src={page3}
-                  alt="image of the book"
-                  onClick={() => handleOpen(page3)}
-                />
-              </SwiperSlide>
-            </>
-          ) : null}
-
-          {isMobile ? (
-            <>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-mobile"
-                  src={mobile1}
-                  alt="image of the book"
-                  onClick={() => handleOpen(mobile1)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-mobile"
-                  src={mobile2}
-                  alt="image of the book"
-                  onClick={() => handleOpen(mobile2)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-mobile"
-                  src={mobile28}
-                  alt="image of the book"
-                  onClick={() => handleOpen(mobile28)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-mobile"
-                  src={mobile29}
-                  alt="image of the book"
-                  onClick={() => handleOpen(mobile29)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-mobile"
-                  src={mobile32}
-                  alt="image of the book"
-                  onClick={() => handleOpen(mobile32)}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="fragment__image-mobile"
-                  src={mobile33}
-                  alt="image of the book"
-                  onClick={() => handleOpen(mobile33)}
-                />
-              </SwiperSlide>
-            </>
-          ) : null}
-
-          <div className="slider__controler">
+          {isMobile
+            ? fragmentMobile.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <img
+                    loading="lazy"
+                    className="fragment__image-mobile"
+                    src={item.image}
+                    alt={item.alt}
+                    onClick={() => handleOpen(item.image)}
+                  />
+                </SwiperSlide>
+              ))
+            : fragmentDesktop.map((item, index) => (
+                <SwiperSlide key={item.id}>
+                  <img
+                    loading="lazy"
+                    className="fragment__image-desktop"
+                    src={item.image}
+                    alt={item.alt}
+                    onClick={() => handleOpen(item.image)}
+                  />
+                </SwiperSlide>
+              ))}
+          <div
+            className={`slider__controller ${
+              isMobile ? "slider__controller-mobile" : ""
+            }`}
+          >
             <div className="swiper__button swiper__button-prev">
               <ion-icon name="chevron-back-outline"></ion-icon>
             </div>

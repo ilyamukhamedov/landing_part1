@@ -57,13 +57,24 @@ const Navigation = () => {
           </ul>
           <div className="social">
             <a href="https://nbgarden.ru" target="_blank">
-              <img className="social__icon" src={nb} alt="NB-Garden icon" />
+              <img
+                loading="lazy"
+                className="social__icon"
+                src={nb}
+                alt="NB-Garden icon"
+              />
             </a>
             <a href="https://dzen.ru/nbgarden" target="_blank">
-              <img className="social__icon" src={dzen} alt="Yandex Dzen icon" />
+              <img
+                loading="lazy"
+                className="social__icon"
+                src={dzen}
+                alt="Yandex Dzen icon"
+              />
             </a>
             <a href="https://www.instagram.com/nbgarden" target="_blank">
               <img
+                loading="lazy"
                 className="social__icon"
                 src={instagram}
                 alt="Instagram icon"

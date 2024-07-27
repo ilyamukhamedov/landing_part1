@@ -41,16 +41,19 @@
   cursor: pointer;
 }
 
-.slider__controler {
+.slider__controller {
   position: absolute;
   bottom: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: 100px;
-  /* justify-content: space-around; */
   color: #f0f1e9;
   width: 100%;
+}
+
+.slider__controller-mobile {
+  gap: 190px;
 }
 
 .swiper-pagination-bullet {

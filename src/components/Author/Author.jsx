@@ -1,6 +1,6 @@
 import React from "react";
 import "./Author.css";
-import authors from "../../images/authors.png";
+import authors from "../../images/authors.webp";
 
 const Author = () => {
   return (
@@ -28,7 +28,12 @@ const Author = () => {
             NB-GARDEN и ландшафтного искусства.
           </p>
         </div>
-        <img className="author__image" src={authors} alt="image of authors" />
+        <img
+          loading="lazy"
+          className="author__image"
+          src={authors}
+          alt="image of authors"
+        />
       </div>
     </div>
   );

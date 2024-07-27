@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import image1 from "../../images/about1.jpg";
-import image2 from "../../images/about2.jpg";
+import image1 from "../../images/about1.webp";
+import image2 from "../../images/about2.webp";
 
 const About = () => {
   return (
@@ -10,7 +10,12 @@ const About = () => {
         <h1 className="about__title">О Книге</h1>
         <div className="about__wrapper">
           <div className="about__block">
-            <img className="about__image" src={image1} alt="image of garden" />
+            <img
+              loading="lazy"
+              className="about__image"
+              src={image1}
+              alt="image of garden"
+            />
 
             <p className="about__text">
               Эта книга рассказывает о замечательных садах, созданных
@@ -32,7 +37,12 @@ const About = () => {
               заинтересованному читателю, любящему свой сад и природу, глубже
               вникнуть в замысел авторов.
             </p>
-            <img className="about__image" src={image2} alt="image of garden" />
+            <img
+              loading="lazy"
+              className="about__image"
+              src={image2}
+              alt="image of garden"
+            />
           </div>
         </div>
       </div>

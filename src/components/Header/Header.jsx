@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Navigation from "../Navigation /Navigation";
-import book from "../../images/bookImage.png";
+import book from "../../images/bookImage.jpg";
 
 const Header = () => {
   return (
@@ -19,7 +19,12 @@ const Header = () => {
             новая книга
           </button>
         </div>
-        <img className="header__book" src={book} alt="image of the book" />
+        <img
+          loading="lazy"
+          className="header__book"
+          src={book}
+          alt="image of the book"
+        />
       </div>
     </div>
   );

@@ -1,3 +1,122 @@
+import mobile1 from "../images/1.webp";
+import mobile2 from "../images/2.webp";
+import mobile28 from "../images/28.webp";
+import mobile29 from "../images/29.webp";
+import mobile32 from "../images/32.webp";
+import mobile33 from "../images/33.webp";
+import mobile36 from "../images/36.webp";
+import mobile37 from "../images/37.webp";
+import mobile90 from "../images/90.webp";
+import mobile91 from "../images/91.webp";
+import mobile232 from "../images/232.webp";
+import mobile233 from "../images/233.webp";
+import page1 from "../images/page_1.webp";
+import page2 from "../images/page_2.webp";
+import page3 from "../images/page_3.webp";
+import page4 from "../images/page_4.webp";
+import page5 from "../images/page_5.webp";
+import page6 from "../images/page_6.webp";
+import review1 from "../images/review_1.webp";
+import review2 from "../images/review_2.webp";
+import review3 from "../images/review_3.webp";
+import review4 from "../images/review_4.webp";
+
+export const fragmentMobile = [
+  {
+    id: 1,
+    image: mobile1,
+    alt: "fragment of book",
+  },
+  {
+    id: 2,
+    image: mobile2,
+    alt: "fragment of book",
+  },
+  {
+    id: 3,
+    image: mobile28,
+    alt: "fragment of book",
+  },
+  {
+    id: 4,
+    image: mobile29,
+    alt: "fragment of book",
+  },
+  {
+    id: 5,
+    image: mobile32,
+    alt: "fragment of book",
+  },
+  {
+    id: 6,
+    image: mobile33,
+    alt: "fragment of book",
+  },
+  {
+    id: 7,
+    image: mobile36,
+    alt: "fragment of book",
+  },
+  {
+    id: 8,
+    image: mobile37,
+    alt: "fragment of book",
+  },
+  {
+    id: 9,
+    image: mobile90,
+    alt: "fragment of book",
+  },
+  {
+    id: 10,
+    image: mobile91,
+    alt: "fragment of book",
+  },
+  {
+    id: 11,
+    image: mobile232,
+    alt: "fragment of book",
+  },
+  {
+    id: 12,
+    image: mobile233,
+    alt: "fragment of book",
+  },
+];
+
+export const fragmentDesktop = [
+  {
+    id: 1,
+    image: page1,
+    alt: "fragment of book",
+  },
+  {
+    id: 2,
+    image: page2,
+    alt: "fragment of book",
+  },
+  {
+    id: 3,
+    image: page3,
+    alt: "fragment of book",
+  },
+  {
+    id: 4,
+    image: page4,
+    alt: "fragment of book",
+  },
+  {
+    id: 5,
+    image: page5,
+    alt: "fragment of book",
+  },
+  {
+    id: 6,
+    image: page6,
+    alt: "fragment of book",
+  },
+];
+
 export const reviewsData = [
   {
     id: 1,
@@ -9,34 +128,42 @@ export const reviewsData = [
   },
   {
     id: 2,
-    name: "Мария Петрова",
-    position: "Маркетолог",
+    name: "Александр Сапелин",
+    position:
+      "Дендролог, ландшафтный архитектор, преподаватель Московского государственного университета леса, автор множества статей и книг по вопросам ландшафтного дизайна и озеленения",
     description:
-      "Очень полезная книга, помогла мне в работе. Она содержит множество практических советов и примеров, которые можно сразу применить в своей профессиональной деятельности. Автор детально объясняет сложные концепции и делает их доступными даже для новичков. Благодаря этой книге, я смогла улучшить свои навыки и значительно повысить качество выполняемой работы. Рекомендую её всем, кто стремится к профессиональному росту и развитию.",
+      "Если читатель видит эти строки, то это значит, что он держит в руках замечательную первую книжку от NB-Garden. Мне посчастливилось прочесть ее одним из первых в стадии рукописи, и я бы сравнивал это с исповедью. Честно и без прикрас обо всем и о себе. А могло ли быть по-другому, если это Наташа Борисова? Нет, не могло.",
   },
   {
     id: 3,
-    name: "Алексей Смирнов",
-    position: "Программист",
-    description: "Отличное руководство для начинающих.",
+    name: "Андрей Лысиков",
+    position:
+      "Кандидат биологических наук, старший научный сотрудник Института лесоведения РАН, член Союза фотохудожников России, садовый журналист, фотограф и консультант",
+    description:
+      "Авторы раскрывают многие секреты своей творческой ландшафтной лаборатории. И при всем этом в рождении садов компании NB-GARDEN остается нечто непостижимое: как из прозаичных куч грунта, штабелей плитки, клинкера и горшков с посадочным материалом по замысловатому сценарию рождаются красота и совершенство, от которых замирает сердце! В этом я вижу зримое подтверждение принципов гештальт-философии о том, что целое гораздо значимее, чем совокупность слагающих его частей.",
   },
+
   {
     id: 4,
-    name: "Наталья Соколова",
-    position: "Учитель",
-    description: "Прекрасное издание, легко читается.",
+    photo: review1,
+    alt: "photo of review",
   },
+
   {
     id: 5,
-    name: "Дмитрий Кузнецов",
-    position: "Студент",
-    description: "Полезная информация, много нового узнал.",
+    photo: review2,
+    alt: "photo of review",
   },
 
   {
     id: 6,
-    name: "Петр Лапенко",
-    position: "Преподаватель",
-    description: "Поразительное качество деталей на каждом участке",
+    photo: review3,
+    alt: "photo of review",
+  },
+
+  {
+    id: 7,
+    photo: review4,
+    alt: "photo of review",
   },
 ];

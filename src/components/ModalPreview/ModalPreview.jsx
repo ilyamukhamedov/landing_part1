@@ -14,6 +14,7 @@ const ModalPreview = ({ isOpen, onClose, imageSrc }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <img
+          loading="lazy"
           className="modal__preview-image"
           src={imageSrc}
           alt="image of the book"

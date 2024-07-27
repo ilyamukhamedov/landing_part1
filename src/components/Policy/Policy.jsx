@@ -1,5 +1,6 @@
 import React from "react";
 import "./Policy.css";
+import book from "../../images/policyBook.webp";
 
 const Policy = () => {
   return (
@@ -18,17 +19,12 @@ const Policy = () => {
         <button className="policy__button" onClick={""}>
           новая книга
         </button>
-
-        {/* <p className="policy__text">
-          Если вас инетерсеует розничная покупка, вы можете обратиться к нашим
-          партнерам по адресу:
-        </p>
-        <ol className="policy__list">
-          <li>Грифбук</li>
-          <li>Лавка Архитектора</li>
-          <li>...</li>
-          <li>...</li>
-        </ol> */}
+        <img
+          loading="lazy"
+          className="policy__image"
+          src={book}
+          alt="image of the book"
+        />
       </div>
     </div>
   );

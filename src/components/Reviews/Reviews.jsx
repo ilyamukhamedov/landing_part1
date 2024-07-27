@@ -39,11 +39,21 @@ const Reviews = () => {
               }}
               key={review.id}
             >
-              <div className="card__data">
-                <h2 className="card__name">{review.name}</h2>
-                <span className="card__position">{review.position}</span>
-                <p className="card__description">{review.description}</p>
-              </div>
+              {review.photo ? (
+                <div className="card__block">
+                  <img
+                    className="card__image"
+                    src={review.photo}
+                    alt={review.name}
+                  />
+                </div>
+              ) : (
+                <div className="card__data">
+                  <h2 className="card__name">{review.name}</h2>
+                  <span className="card__position">{review.position}</span>
+                  <p className="card__description">{review.description}</p>
+                </div>
+              )}
             </SwiperSlide>
           ))}
         </Swiper>
