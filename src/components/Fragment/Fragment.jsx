@@ -51,7 +51,6 @@ const Fragments = ({ handleOpen }) => {
             ? fragmentMobile.map((item) => (
                 <SwiperSlide key={item.id}>
                   <img
-                    loading="lazy"
                     className="fragment__image-mobile"
                     src={item.image}
                     alt={item.alt}
@@ -59,10 +58,9 @@ const Fragments = ({ handleOpen }) => {
                   />
                 </SwiperSlide>
               ))
-            : fragmentDesktop.map((item, index) => (
+            : fragmentDesktop.map((item) => (
                 <SwiperSlide key={item.id}>
                   <img
-                    loading="lazy"
                     className="fragment__image-desktop"
                     src={item.image}
                     alt={item.alt}
