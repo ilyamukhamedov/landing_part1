@@ -5,6 +5,14 @@
   padding: 70px 20px;
 }
 
+.reviews__title {
+  font-family: "Micra", sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  color: #222;
+  margin: 0;
+}
+
 .reviews__container {
   max-width: 1245px;
   margin: 0 auto;
@@ -81,6 +89,12 @@
   font-weight: lighter;
   margin: 0;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1150px) {
+  .reviews__title {
+    font-size: 21px;
+  }
 }
 
 @media screen and (max-width: 768px) {

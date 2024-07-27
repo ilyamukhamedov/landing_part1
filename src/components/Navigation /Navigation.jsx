@@ -31,12 +31,8 @@ const Navigation = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#fragments"
-                className="nav__link"
-                onClick={handleOpenMenu}
-              >
-                ФРАГМЕНТЫ И ОТЗЫВЫ
+              <a href="#reviews" className="nav__link" onClick={handleOpenMenu}>
+                РЕЦЕНЗИИ И ОТЗЫВЫ
               </a>
             </li>
             <li>
