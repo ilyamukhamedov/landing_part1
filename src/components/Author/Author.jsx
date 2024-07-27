@@ -28,12 +28,7 @@ const Author = () => {
             NB-GARDEN и ландшафтного искусства.
           </p>
         </div>
-        <img
-          loading="lazy"
-          className="author__image"
-          src={authors}
-          alt="image of authors"
-        />
+        <img className="author__image" src={authors} alt="image of authors" />
       </div>
     </div>
   );
