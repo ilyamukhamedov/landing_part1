@@ -19,12 +19,7 @@ const Header = () => {
             новая книга
           </button>
         </div>
-        <img
-          loading="lazy"
-          className="header__book"
-          src={book}
-          alt="image of the book"
-        />
+        <img className="header__book" src={book} alt="image of the book" />
       </div>
     </div>
   );
