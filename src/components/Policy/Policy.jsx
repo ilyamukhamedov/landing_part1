@@ -2,11 +2,12 @@ import React from "react";
 import "./Policy.css";
 import book from "../../images/policyBook.webp";
 
-const Policy = () => {
+const Policy = ({ openBook }) => {
   return (
     <div className="policy" id="policy">
       <div className="policy__container">
         <h1 className="policy__title">Политика Продаж</h1>
+        <img className="policy__image" src={book} alt="image of the book" />
         <p className="policy__description">
           Дорогие читатели! <br />
           <br />
@@ -16,15 +17,9 @@ const Policy = () => {
           <br /> Переходите на сайт и будьте первыми, кто узнает о поступлении
           новых книг!
         </p>
-        <button className="policy__button" onClick={""}>
+        <button className="policy__button" onClick={openBook}>
           новая книга
         </button>
-        <img
-          loading="lazy"
-          className="policy__image"
-          src={book}
-          alt="image of the book"
-        />
       </div>
     </div>
   );

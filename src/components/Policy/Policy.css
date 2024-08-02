@@ -10,6 +10,10 @@
   position: relative;
   max-width: 1245px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .policy__title {
@@ -29,6 +33,7 @@
   padding-top: 60px;
   margin: 0;
   line-height: 25px;
+  z-index: 2;
 }
 
 .policy__button {
@@ -102,9 +107,14 @@
 }
 
 @media screen and (max-width: 450px) {
+  .policy__container {
+    align-items: center;
+    justify-content: center;
+  }
+
   .policy__button {
     margin-top: 30px;
     padding: 30px 24px;
-    width: 100%;
+    /* width: 100%; */
   }
 }

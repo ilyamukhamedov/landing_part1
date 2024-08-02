@@ -10,17 +10,12 @@ import Policy from "../Policy/Policy";
 import ModalPreview from "../ModalPreview/ModalPreview";
 
 const App = () => {
-  // const [open, setOpen] = useState(false);
   const [openPreview, setOpenPreview] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
 
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
-
-  // const handleOpen = () => {
-  //   setOpen(true);
-  // };
+  const handleClick = () => {
+    window.open("https://nbgarden.ru/book_2", "_blank");
+  };
 
   const handleOpenPreview = (imageSrc) => {
     setCurrentImage(imageSrc);
@@ -33,14 +28,13 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header />
+      <Header openBook={handleClick} />
       <Author />
       <About />
       <Fragment handleOpen={handleOpenPreview} />
       <Reviews />
-      <Policy />
+      <Policy openBook={handleClick} />
       <Footer />
-      {/* <Modal isOpen={open} onClose={handleClose} /> */}
       <ModalPreview
         isOpen={openPreview}
         onClose={handleClosePreview}

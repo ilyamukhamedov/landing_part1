@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.css";
 import Navigation from "../Navigation /Navigation";
-import book from "../../images/bookImage.jpg";
+import book from "../../images/bookImage.webp";
 
-const Header = () => {
+const Header = ({ openBook }) => {
   return (
     <div className="header">
       <Navigation />
@@ -15,7 +15,7 @@ const Header = () => {
             17 проектов ландшафтной <br />
             мастерской NB-GARDEN
           </p>
-          <button type="button" className="header__button" onClick={""}>
+          <button type="button" className="header__button" onClick={openBook}>
             новая книга
           </button>
         </div>
