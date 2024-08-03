@@ -1,9 +1,14 @@
-# React + Vite
+# NB Landing Book Part 1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here is the project of the fisrt part of the book about landscape design.
 
-Currently, two official plugins are available:
+I used Swiper JS to create resposive slides component
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Landing-book
+## Getting Started:
+
+1. Clone the repository: git clone [https://github.com/ilyamukhamedov/book-landing]
+2. Install dependencies: npm install or yarn install
+3. Start the development server: npm run dev or yarn dev
+4. Open the application in your web browser: http://localhost:5173/book_1
+
+### Deploy:
