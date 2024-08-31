@@ -11,6 +11,14 @@ I used Swiper JS to create resposive slides component
 3. Start the development server: `npm run dev` or `yarn dev`
 4. Open the application in your web browser: http://localhost:5173/book_1
 
+### 2 Part of the Book :
+
+https://github.com/ilyamukhamedov/landing_part2
+
 ### Deploy:
 
 https://landing-part1.vercel.app/
+
+### Screenshots
+
+<img src="https://github.com/ilyamukhamedov/landing_part1/blob/main/src/images/Main.png" width="600"/>

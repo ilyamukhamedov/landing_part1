@@ -4,10 +4,12 @@
     <style>
       .cls-1, .cls-2 {
         stroke-width: 0px;
+
       }
 
       .cls-3 {
         stroke-width: 3px;
+
       }
 
       .cls-3, .cls-4 {
