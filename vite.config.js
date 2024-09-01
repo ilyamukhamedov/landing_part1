@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // base: "/book_1/",
   base: import.meta.env.VITE_BASE_PATH || "/",
   server: {
     port: 5173,
