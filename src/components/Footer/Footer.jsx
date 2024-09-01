@@ -75,10 +75,10 @@ const Footer = () => {
         </div>
       </div>
       <p className="footer__copyright">
-        Copyright © 2024 by{" "}
+        Copyright © 2024 by
         <a
           className="footer__link"
-          href="https://www.linkedin.com/in/ilyamukhamedov/"
+          href="https://www.ilyam.tech/"
           target="_blank"
         >
           Ilya
